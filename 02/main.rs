@@ -21,8 +21,8 @@ fn check(nums: Vec<i32>) -> bool {
     // check if:
     // 1. all absolute differences are non-zero and less than or equal to 3
     // 2. all differences are either positive or negative
-    return diffs.iter().all(|&v| v != 0 && v.abs() <= 3)
-        && (diffs.iter().all(|&v| v > 0) || diffs.iter().all(|&v| v < 0));
+    diffs.iter().all(|&v| v != 0 && v.abs() <= 3)
+        && (diffs.iter().all(|&v| v > 0) || diffs.iter().all(|&v| v < 0))
 }
 
 fn solution_b() {
