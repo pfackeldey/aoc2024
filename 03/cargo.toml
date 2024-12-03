@@ -1,0 +1,9 @@
+[package]
+name = "day03"
+
+[[bin]]
+name = "day03"
+path = "main.rs"
+
+[dependencies]
+regex = "*"
