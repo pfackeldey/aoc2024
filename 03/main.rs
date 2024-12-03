@@ -25,18 +25,10 @@ fn solution_b() {
 
     let mut result = 0;
     for chunk in content.split("do()") {
-        if chunk.contains("don't()") {
-            // as soon as we find a don't() block, we can split the chunk
-            // and find all the mul() operations within the do() block (the first part)
-            if let Some((doblock, _)) = chunk.split_once("don't()") {
-                let tmp = multiply_re_match(doblock);
-                result += tmp;
-            }
-        } else {
-            // if there is no don't() block, we can just find all the mul() operations
-            let tmp = multiply_re_match(chunk);
-            result += tmp;
-        }
+        let doblock = chunk
+            .split_once("don't()")
+            .map_or(chunk, |(doblock, _)| doblock);
+        result += multiply_re_match(doblock);
     }
     println!("Solution b: {:?}", result);
 }
