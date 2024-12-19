@@ -2,7 +2,7 @@ use std::collections::HashMap;
 use std::fs;
 
 fn solution_a() {
-    let contents = fs::read_to_string("data.txt").unwrap();
+    let contents = fs::read_to_string("crates/01/src/data.txt").unwrap();
 
     // read in the file and parse the numbers into two vectors
     let mut vec1 = Vec::new();
@@ -32,7 +32,7 @@ fn solution_a() {
 }
 
 fn solution_b() {
-    let contents = fs::read_to_string("data.txt").unwrap();
+    let contents = fs::read_to_string("crates/01/src/data.txt").unwrap();
 
     // read in the file and parse the numbers into two vectors
     // also store the right number occurences in a hashmap

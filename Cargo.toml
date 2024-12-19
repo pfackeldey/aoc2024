@@ -4,6 +4,7 @@ resolver = "2"
 
 [workspace.package]
 edition = "2021"
+publish = false
 
 [workspace.lints.clippy]
 all = "warn"

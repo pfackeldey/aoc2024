@@ -1,7 +1,7 @@
 use std::fs;
 
 fn solution_a() {
-    let contents = fs::read_to_string("data.txt").unwrap();
+    let contents = fs::read_to_string("crates/02/src/data.txt").unwrap();
 
     let mut n_safe = 0;
     for line in contents.lines() {
@@ -26,7 +26,7 @@ fn check(nums: Vec<i32>) -> bool {
 }
 
 fn solution_b() {
-    let contents = fs::read_to_string("data.txt").unwrap();
+    let contents = fs::read_to_string("crates/02/src/data.txt").unwrap();
 
     let mut n_safe = 0;
     for line in contents.lines() {

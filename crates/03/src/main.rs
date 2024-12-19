@@ -3,7 +3,7 @@ use regex::Regex;
 use std::fs;
 
 fn solution_a() {
-    let content = fs::read_to_string("data.txt").expect("Unable to read file");
+    let content = fs::read_to_string("crates/03/src/data.txt").expect("Unable to read file");
 
     let result = multiply_re_match(&content);
     println!("Solution a: {:?}", result);
@@ -21,7 +21,7 @@ fn multiply_re_match(chunk: &str) -> i32 {
 }
 
 fn solution_b() {
-    let content = fs::read_to_string("data.txt").expect("Unable to read file");
+    let content = fs::read_to_string("crates/03/src/data.txt").expect("Unable to read file");
 
     let mut result = 0;
     for chunk in content.split("do()") {

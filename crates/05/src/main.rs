@@ -2,7 +2,7 @@ use std::cmp::Ordering;
 use std::fs;
 
 fn solution_a() {
-    let contents = fs::read_to_string("data.txt").unwrap();
+    let contents = fs::read_to_string("crates/05/src/data.txt").unwrap();
 
     let rules = contents
         .lines()
@@ -46,7 +46,7 @@ fn solution_a() {
 }
 
 fn solution_b() {
-    let contents = fs::read_to_string("data.txt").unwrap();
+    let contents = fs::read_to_string("crates/05/src/data.txt").unwrap();
 
     let rules = contents
         .lines()
